@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../../../public/css/fonts/Travelport.eot?m8gxvs');
+  src: url('../../../public/css/fonts/Travelport.eot?m8gxvs#iefix')format('embedded-opentype'),
+  url('../../../public/css/fonts/Travelport.ttf?m8gxvs')format('truetype'),
+  url('../../../public/css/fonts/Travelport.woff?m8gxvs')format('woff'),
+  url('../../../public/css/fonts/Travelport.svg?m8gxvs#icomoon')format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-queue2:before {
+  content: "\e900";
+}
+.icon-queue3:before {
+  content: "\e901";
+}
+.icon-pnrok:before {
+  content: "\e902";
+}
+.icon-pnrremove:before {
+  content: "\e903";
+}
+.icon-pnrupdate:before {
+  content: "\e904";
+}
+.icon-queue4:before {
+  content: "\e905";
+}
+.icon-sendemail:before {
+  content: "\e906";
+}
+.icon-sendjson:before {
+  content: "\e907";
+}
+.icon-sms:before {
+  content: "\e908";
+}
+.icon-duplicate:before {
+  content: "\e909";
+}
+.icon-edit:before {
+  content: "\e90a";
+}
+.icon-delete:before {
+  content: "\e90b";
+}
+.icon-serach:before {
+  content: "\e90c";
+}
+.icon-close:before {
+  content: "\e90d";
+}
+.icon-add:before {
+  content: "\e90e";
+}
+.icon-settings:before {
+  content: "\e90f";
+}
+.icon-sendterminal:before {
+  content: "\e910";
+}
+.icon-event:before {
+  content: "\e911";
+}
+.icon-autoticketing:before {
+  content: "\e912";
+}
+.icon-queue1:before {
+  content: "\e913";
+}
+.icon-clock:before {
+  content: "\e914";
+}
+.icon-smarpoint:before {
+  content: "\e915";
+}
+.icon-notification:before {
+  content: "\e916";
+}
+.icon-error:before {
+  content: "\e917";
+}
+.icon-warning:before {
+  content: "\e918";
+}

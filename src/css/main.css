@@ -1,0 +1,254 @@
+/* ==================== Imports ==================== */
+@import './variables.css';
+@import './iconfont.css';
+ 
+
+body{
+	box-sizing: border-box;
+	font-family: var(--font);
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+}
+ul{
+	list-style: none;
+	padding:0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+h1{color: orange} 
+   
+
+
+
+/*========= Helpers clases =========*/
+
+.tr-wrapper{
+	width: 95%;
+	margin: auto;
+}
+.tr-flex{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+.tr-container{
+	//width: 1370px;
+	width: 90%;
+	margin: auto;
+}
+
+.clearfix:after, .clearfix:before{
+	content: "";
+  	display: table;
+  	clear: both;
+}
+
+
+
+
+
+
+/* ========= General Mixins ========= */
+/* @define-mixin btn $padding, $bgColor, $color, $radius, $fontSize {
+	padding: $padding;
+	background-color: $bgColor;
+	color: $color;
+	border-radius: $radius;
+	font-size: $fontSize;
+	display: inline-block;
+}
+@define-mixin big_item $width, $height, $bgColor, $radius, $fontSize{
+	width: $width;
+	height: $height;
+	background-color: $bgColor;
+	border-radius: $radius;
+	font-size: $fontSize;
+}
+
+
+
+=================== HEADER ===================
+@define-mixin head_gradient $height, $bgColor, $bgColorStart, $bgColorEnd {
+	height: $height;
+	background: $bgColor;
+	background: linear-gradient(to right, $bgColorStart, $bgColorEnd);
+}
+
+.header{
+	
+	&-border{
+		@mixin head_gradient 9px , var(--orient), var(--coriousBlue), var(--lima);
+	}
+
+	.tr-wrapper{
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+	}
+	
+	&-title{
+		display: flex;
+		margin-top: 2rem;
+
+		h1{
+			color: var(--deepCerulean);
+			font-weight: normal;
+			font-size: 2rem;
+
+			span{
+				font-weight: bold;
+			}
+		}
+	}
+	&-wrapper{
+		display: flex;
+		margin-top: 2rem;
+
+		.header-log{
+			display: flex;
+		    align-items: center;
+		    justify-content: space-between;
+
+			li{
+				display: inline-block;
+				padding-left: 1.8rem;
+
+				&:first-child{
+					padding-left: 0;
+					padding-top: 0.3rem;
+				}
+			}
+
+			.header-config{
+				i{
+					color: var(--coriousBlue);
+					cursor: pointer;
+					font-size: 1.5rem;
+					font-weight: bold;
+				}
+			}
+			.header-sign{
+				a{
+					display: inline-block;
+					color: var(--coriousBlue);
+					font-size: 1.2rem;
+				}
+			}
+			.header-logo{
+				img{
+					width: 200px;
+				}
+			}
+		}
+	}
+
+	&-options{
+		li{
+			display: inline-block;
+			padding-right: 3rem;
+			margin-bottom: 1rem;
+
+			a{
+				color: var(--coriousBlue);
+				font-size: 1.2rem;
+
+				&.active{
+					padding-bottom: .5rem;
+					border-bottom: 3px solid var(--coriousBlue);
+				}
+			}
+		}
+	}  
+	hr{
+		border-bottom: 1px solid var(--concrete);
+		border-top: 1px solid var(--concrete);
+		border-left: none;
+    	border-right: none;
+	} 
+} 
+@media(--full) {
+	.tr-container{
+		width: 100% !important;
+	}
+}
+
+================ END HEADER ================
+
+=================== HOME ===================
+
+.main{
+	&-marketing{
+		display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    background-color: var(--concrete);
+	    width: 100%;
+	    min-height: 120px;
+	}
+	.tr-wrapper{
+		display: flex;
+	    //align-items: center;
+	    justify-content: center;
+
+	    &:last-child{
+	    	margin-top: 1rem;
+	    }
+	}
+	&-sidebar{
+		width: 35%;
+
+		.sidebar-new-rule{
+			.new-rule{
+				@mixin btn 1.3rem 2rem, var(--lima), var(--white), 1px, calc(var(--fontSize) * 1.2);
+				width: 60%;
+				margin-bottom: 1rem;
+			}
+			.faq{
+				@mixin btn 1.3rem 2rem, var(--white), var(--coriousBlue), 1px, calc(var(--fontSize) * 1.2);
+			}
+		}
+	}
+	&-content{
+		width: 65%;
+
+		.content-list{
+			li{
+				display: inline-block;
+				position: relative;
+				@mixin big_item 197px, 197px, var(--orient), 1px, calc( var(--fontSize) * 1.1);
+
+				div{
+					position: absolute;
+					bottom: 0;
+					width: 100%;
+					min-height: 85px;
+					p{
+						text-align: center;
+						color: var(--white);
+					}
+				}
+			}
+		}
+	}
+}
+*/	
+
+
+
+/*================ END HOME ================*/
+
+
+
+
+
+
+
+
+
+
+
+
+

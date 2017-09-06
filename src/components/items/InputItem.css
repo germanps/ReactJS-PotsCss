@@ -1,0 +1,6 @@
+@import "../../css/main.css";
+
+#boton{
+	background-color: var(--lima);
+	color: var(--white);
+} 

@@ -1,0 +1,74 @@
+/* ================== Variables ================== */
+:root{
+	/* ===========Font ===========*/
+	--font: Calibri, Arial, sans-serif;
+	/* ========= Colores ========= */
+	--bg-body: #fafafa;
+	--bg-header: #466173;
+	--bg-footer: #273b47;
+	--border-feature: #1f313c;
+	--btn-gradient: #fd324e;
+	--btn-gradient-start: color(var(--btn-gradient) blackness(30%));
+	--btn-gradient-end: color(var(--btn-gradient) lightness(10%) hue(10%));
+	
+	/* ==== Sizes ===== */
+	--oneRem: 1rem;
+	--fontSize: 1rem;
+	--layout-col: 8.3333%;
+ 	--layout-container: 1240px;
+
+	/* ======= Branding colours ======= */
+	--orient: #00507F;
+	--deepCerulean:#0075b0;
+	--coriousBlue: #159CDF;
+	--baliHai: #87A4B3;
+	--lima: #78be20;
+	--finn: #5e2751;
+
+	/* ======= Accent colours ======= */
+	--doveGray: #666666;
+	--dustyGray: #999999;
+	--silver: #cccccc;
+	--gallery:#EBEBEB;
+	--iron: #d0d1d2;
+	--concrete: #f2f2f2;
+	--white: #ffffff;
+	--black: #000000;
+
+	/* ======= Notifications ======= */
+	--thunderbird: #C81423;
+	--carrot: #F39A26;
+}
+/*  ============ Custom media queries ============ */
+@custom-media --mobile (min-width: 480px);
+@custom-media --tablet (min-width: 768px);
+@custom-media --desktop (min-width: 992px);
+@custom-media --full (min-width: 1400px);
+@custom-media --retina (-webkit-min-device-pixel-ratio: 2);
+
+
+
+/*  ============ Mixins ============ */
+@define-mixin btn_1 $textColor, $bgColor, $bgColorStart, $bgColorEnd {
+	border-radius: 12px;
+	border: none;
+	color: $textColor;
+	padding: 7px 12px;
+	cursor: pointer;
+	text-decoration: none;
+	font-size: var(--fontSize);
+	background: $bgColor;
+	background: linear-gradient(to left, $bgColorStart, $bgColorEnd);
+}
+
+/*Gradient*/
+@define-mixin gradientLine {
+background: #1e5799;
+background: -moz-linear-gradient(left, #1e5799 0%, #0075b0 20%, #78be20 80%, #78be20 80%);
+background: -webkit-linear-gradient(left, #1e5799 0%,#0075b0 20%,#78be20 80%,#78be20 80%);
+background: linear-gradient(to right, #1e5799 0%,#0075b0 20%,#78be20 80%,#78be20 80%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#78be20',GradientType=1 );
+}
+@define-mixin btn $primary-color, $secondary-color, $size {
+	/*Properties*/
+}
