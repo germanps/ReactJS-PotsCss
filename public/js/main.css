@@ -345,4 +345,5 @@ h1{color: orange}
 #boton{
 	background-color: #78be20;
 	color: #ffffff;
+	text-transform: uppercase;  
 } 

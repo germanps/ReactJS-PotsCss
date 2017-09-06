@@ -3,4 +3,5 @@
 #boton{
 	background-color: var(--lima);
 	color: var(--white);
+	text-transform: uppercase;  
 } 
