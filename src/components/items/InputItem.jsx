@@ -1,15 +1,26 @@
 var React = require('react');
 import styles from './Inputitem.css';
 var InputItem = React.createClass({
-	onClick: function (event) {
-		console.log(event.target.id);
+	getInitialState: function () {
+		return{
+			value: ''
+		}	
+	},
+	onChange: function (event) {
+		this.setState({
+			value: event.target.value
+		})
+	},
+	getValue: function () {
+		return this.state.value
 	},
 	render: function(){
 		return(
-			<div className="col-md-6">
-				<input type="text" />
-				<button id="boton" type="button" onClick={this.onClick}>Agregar</button>
-			</div>   
+				<input 
+					type="text" 
+					onChange={this.onChange} 
+					value={this.state.value} 
+				/>
 		)
 	}
 });

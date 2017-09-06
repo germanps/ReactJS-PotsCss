@@ -22428,11 +22428,28 @@ var InputItem = __webpack_require__(186);
 var InputBox = React.createClass({
 	displayName: 'InputBox',
 
+	getInitialState: function getInitialState() {
+		return {
+			button_title: "Agregar"
+		};
+	},
+	onClick: function onClick(event) {
+		if (this.state.button_title == "Agregar") {
+			this.setState({ button_title: 'No agregar' });
+		} else if (this.state.button_title == "No agregar") {
+			this.setState({ button_title: 'Agregar' });
+		}
+	},
 	render: function render() {
 		return React.createElement(
 			'div',
 			{ className: 'row' },
-			React.createElement(InputItem, null)
+			React.createElement(InputItem, null),
+			React.createElement(
+				'button',
+				{ id: 'boton', type: 'button', onClick: this.onClick },
+				this.state.button_title
+			)
 		);
 	}
 });
@@ -22457,20 +22474,25 @@ var React = __webpack_require__(20);
 var InputItem = React.createClass({
 	displayName: 'InputItem',
 
-	onClick: function onClick(event) {
-		console.log(event.target.id);
+	getInitialState: function getInitialState() {
+		return {
+			value: ''
+		};
+	},
+	onChange: function onChange(event) {
+		this.setState({
+			value: event.target.value
+		});
+	},
+	getValue: function getValue() {
+		return this.state.value;
 	},
 	render: function render() {
-		return React.createElement(
-			'div',
-			{ className: 'col-md-6' },
-			React.createElement('input', { type: 'text' }),
-			React.createElement(
-				'button',
-				{ id: 'boton', type: 'button', onClick: this.onClick },
-				'Agregar'
-			)
-		);
+		return React.createElement('input', {
+			type: 'text',
+			onChange: this.onChange,
+			value: this.state.value
+		});
 	}
 });
 
